@@ -1,0 +1,40 @@
+{
+  "name": "audio-transcriptor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "nodemon src/index.ts",
+    "test": "vitest --config ./vitest.config.ts",
+    "test:ui": "npm run test -- --ui",
+    "test:coverage": "npm run test -- --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "ffmpeg-static": "^5.2.0",
+    "fluent-ffmpeg": "^2.1.3",
+    "mime-types": "^2.1.35",
+    "openai": "^4.66.1",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/fluent-ffmpeg": "^2.1.26",
+    "@types/mime-types": "^2.1.4",
+    "@types/node": "^22.7.4",
+    "@types/uuid": "^10.0.0",
+    "@vitest/coverage-v8": "^2.1.1",
+    "@vitest/ui": "^2.1.1",
+    "nodemon": "^3.1.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2",
+    "vitest": "^2.1.1"
+  }
+}

@@ -1,0 +1,6 @@
+POST http://localhost:3000/transcribe
+Content-Type: application/json
+
+{
+    "audioUrl": "http://sndup.net/rxp4h/d"
+}
